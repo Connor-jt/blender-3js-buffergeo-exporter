@@ -27,6 +27,7 @@ class OpenBrowser(Operator):
             # figure out the filename
             curr_filename = self.filepath
             if (adding_index): curr_filename += "_" + obj.name + ".js"
+            else curr_filename += ".js"
             export_mesh(obj.data, curr_filename, self)
 
         return {'FINISHED'}
